@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.farmersstore">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FarmersStore">
+        <activity android:name=".fragments.DashboardFragment"></activity>
+        <activity android:name=".fragments.ProductsFragment" />
+        <activity android:name=".fragments.OrdersFragment" />
+        <activity android:name=".activities.FragmentOrders" />
+        <activity android:name=".activities.DashboardActivity" />
+        <activity android:name=".activities.ProgressIndicator" />
+        <activity android:name=".activities.ItemListLayout" />
+        <activity android:name=".activities.ItemDashboardLayout" />
+        <activity android:name=".activities.SettingsActivity" />
+        <activity android:name=".activities.ProfileActivity" />
+        <activity android:name=".activities.Profile" />
+        <activity android:name=".activities.ProductDetailsActivity" />
+        <activity android:name=".activities.ForgotPasswordActivity" />
+        <activity android:name=".activities.AddProductActivity" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.MainActivity" />
+    </application>
+
+</manifest>
